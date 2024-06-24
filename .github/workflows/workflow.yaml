@@ -1,0 +1,13 @@
+name: Build project
+
+on:
+  push: 
+    branches:
+      - main
+
+jobs:
+  buildjob1:
+    runs-on: ubuntu-latest
+    steps: 
+    - name: buildstep1
+      uses: actions/checkout@v4  
